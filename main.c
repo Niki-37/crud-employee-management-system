@@ -41,13 +41,13 @@ int main() {
   printf("8. List all employees\n");
 
   while (true) {
-    int use_input;
+    int user_input;
     char string_user_input[50];
 
     fgets(string_user_input, sizeof(string_user_input), stdin);
-    use_input = atoi(string_user_input);
+    user_input = atoi(string_user_input);
 
-    switch (use_input) {
+    switch (user_input) {
       case 0:
         close_connection(conn);
         exit(0);
